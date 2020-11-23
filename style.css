@@ -1,3 +1,5 @@
+/* Generic styling */
+
 * {
   box-sizing: border-box;
   background-color: #333;
@@ -5,16 +7,100 @@
   font-family: "Sans Serif";
 }
 
+body {
+  overflow-y: scroll;
+}
+
+a {
+  background-color: #dfdfdf;
+  color: #333;
+}
+
+hr {
+  border: 1px solid #dfdfdf;
+}
+
+h4 {
+  margin: 4px 0px;
+  background-color: #dfdfdf;
+  color: #333;
+}
+
+ul, li {
+  background-color: #dfdfdf;
+  color: #333;
+}
+
+/* Container pads the page horizontally for better layout */
+
 .container {
-  width: 90%;
+  width: 95%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
 
-.content {
+@media (min-width: 576px) {
+  .container {
+    width: 90%;
+  }
+}
+
+/* Page navbar styling */
+
+.site-navbar {
+  margin: 0px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  margin: 4px 0px;
+}
+
+.logo {
+  width: auto;
+  height: 2.5rem;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.description {
+  margin: 16px 0px;
+}
+
+/* Nav buttons styling */
+
+.nav {
+  display: flex;
+  margin: 0px;
+}
+
+.nav-item {
+  padding: 8px;
+  background: #333;
+  color: #dfdfdf;
+  border-style: none;
+  border-bottom: 0.25rem solid transparent;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: border 0.25s;
+}
+
+.nav-item:hover {
+  border-bottom: 0.25rem solid #818181;
+}
+
+.active {
+  border-bottom: 0.25rem solid #dfdfdf;
+}
+
+/* Content styling */
+
+.content {
+  display: none;
   flex-wrap: wrap;
 }
 
@@ -33,46 +119,11 @@
   color: #333;
 }
 
-.title {
-  margin-bottom: 4px;
+.section-title {
+  background-color: #333;
+  color: #dfdfdf;
 }
 
-.description {
-  margin: 4px;
-}
-
-.nav {
+.shown {
   display: flex;
-  margin: 0px;
-}
-
-.nav-item {
-  margin: 4px;
-  padding: 8px;
-  background: #333;
-  color: #dfdfdf;
-  border: 1px solid #dfdfdf;
-  border-radius: 8px;
-  text-decoration: none;
-}
-
-.active {
-  background-color: teal;
-  color: #dfdfdf;
-  border: 1px solid teal;
-}
-
-hr {
-  border: 1px solid #dfdfdf;
-}
-
-h4 {
-  margin: 4px 0px;
-  background-color: #dfdfdf;
-  color: #333;
-}
-
-ul, li {
-  background-color: #dfdfdf;
-  color: #333;
 }

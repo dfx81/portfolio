@@ -12,54 +12,113 @@
 
 <body>
   <div class="container">
-    <h1 class="title">Danial Fitri</h1>
-    <hr/>
-    <p class="description">An aspiring programmer & developer</p>
-    <div class="nav">
-      <a href="#" class="nav-item active">About Me</a>
-      <a href="#" class="nav-item">Contact Me</a>
+    <!-- Site navbar -->
+    <div class="site-navbar">
+      <h1 class="title">Danial Fitri</h1>
+      <img class="logo" src="https://raw.githubusercontent.com/dfx81/dfx81.github.io/master/res/logo.png" alt="logo"></img>
     </div>
-    
-    <div class="content">
+    <hr/>
+    <p class="description">An aspiring programmer</p>
+    <div class="nav">
+      <button onclick='show("about")' id="about-btn" class="nav-item active"><b>About Me</b></button>
+      <button onclick='show("contact")' id="contact-btn" class="nav-item"><b>Contact Me</b></button>
+    </div>
+
+    <!-- Content Pane #1 -->
+    <div id="about" class="content shown">
       <div class="column">
+        <h3>Personal Info</h3>
         <div class="card">
           <h4>Educations</h4>
           <ul>
-            <li>Universiti Utara Malaysia</li>
-            <li>Kolej Matrikulasi Kedah</li>
-            <li>SMK Padang Serai</li>
-            <li>SMK Dato' Lela Pahlawan</li>
-            <li>SK Sidam Kiri</li>
+            <li>Northern University of Malaysia (2019-Present)</li>
+            <li>Kedah Matriculation College (2018-2019)</li>
+            <li>SMK Padang Serai (2013-2017)</li>
+            <li>SMK Dato' Lela Pahlawan (2013)</li>
+            <li>SK Sidam Kiri (2007-2012)</li>
           </ul>
         </div>
-        <div class="card">
-          <h4>Skills</h4>
-          <ul>
-            <li>Web design & development</li>
-            <li>Software development</li>
-            <li>Mobile app development</li>
-            <li>Game development</li>
-            <li>Drawing</li>
-          </ul>
-        </div>
-      </div>
-      <div class="column">
         <div class="card">
           <h4>Achievements</h4>
           <ul>
-            <li>Received Dean's Award for two semesters straight</li>
-            <li>Achieved Merit in National Chemistry Quiz</li>
+            <li>Matriculation CGPA - 3.67</li>
+            <li>SPM - 6A 2B 1C</li>
+            <li>National Chemistry Quiz - Merit</li>
+            <li>PT3 - 13A</li>
+            <li>UPSR - 6A</li>
           </ul>
         </div>
         <div class="card">
-          <h4>Languages</h4>
+          <h4>Strengths</h4>
           <ul>
-            <li>C/C++</li>
-            <li>Python</li>
-            <li>Java</li>
-            <li>C#</li>
-            <li>Javascript</li>
+            <li>Quick learner</li>
+            <li>Always learning new skills</li>
+            <li>Great during logical thinking</li>
+            <li>Dependable for problem solving tasks</li>
+            <li>Always help others with their code</li>
+            <li>Tries to teach others new skills</li>
+            <li>Always strive for optimized and clean code</li>
           </ul>
+        </div>
+      </div>
+
+      <div class="column">
+        <h3>Skills</h3>
+        <div class="card">
+          <h4>Programming</h4>
+          <ul>
+            <li>Proficient in several languages:
+              <ul>
+                <li>C/C++</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>C#</li>
+                <li>Javascript</li>
+              </ul>
+            </li>
+            <li>Website design & development:
+              <ul>
+                <li>HTML/CSS/JS</li>
+                <li>ReactJS</li>
+                <li>BootstrapJS</li>
+                <li>FirebaseJS</li>
+                <li>NodeJS</li>
+              </ul>
+            </li>
+            <li>Android app development</li>
+            <li>Game development</li>
+            <li>Google Cloud</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>Misc</h4>
+          <ul>
+            <li>Drawing art & assets</li>
+            <li>Composing simple music & jingles</li>
+            <li>Write proficiently in English</li>
+            <li>Video editing</li>
+            <li>Graphic editing & design</li>
+            <li>Audio editing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content Pane #2 -->
+    <div id="contact" class="content">
+      <div class="column">
+        <h3>Contact Info</h3>
+        <div class="card">
+          <h4>Website</h4>
+          <a href="https://dfx81.github.io">dfx Website</a>
+          <h4>Email</h4>
+          <a href="mailto: example@gmail.com">example@gmail.com</a>
+          <h4>Twitter</h4>
+          <a href="https://twitter.com/dfx_81">@dfx_81</a>
+          <h4>Instagram</h4>
+          <a href="https://instagram.com/dfx_81">@dfx_81</a>
+          <h4>Github</h4>
+          <a href="https://github.com/dfx81">@dfx81</a>
         </div>
       </div>
     </div>
