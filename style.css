@@ -34,7 +34,7 @@ ul, li {
 /* Container pads the page horizontally for better layout */
 
 .container {
-  width: 95%;
+  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
