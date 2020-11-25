@@ -104,6 +104,12 @@ ul, li {
   flex-wrap: wrap;
 }
 
+@media (min-width: 768px) {
+  .content {
+    flex-wrap: nowrap
+  }
+}
+
 .column {
   display: flex;
   flex: 50%;
