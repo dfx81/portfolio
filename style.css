@@ -104,16 +104,20 @@ ul, li {
   flex-wrap: wrap;
 }
 
+.column {
+  display: flex;
+  flex: 100%;
+  flex-direction: column;
+}
+
 @media (min-width: 768px) {
   .content {
     flex-wrap: nowrap
   }
-}
 
-.column {
-  display: flex;
-  flex: 50%;
-  flex-direction: column;
+  .column {
+    flex: 50%;
+  }
 }
 
 .card {
